@@ -11,5 +11,7 @@ export interface ITitleProps {
 }
 
 export const Title: React.SFC<ITitleProps> = (props) => (
-  <h1 className={cnTitle({}, [props.className])}>{props.text}</h1>
+  <div className={cn('TitleArea')()} role="heading" aria-level={1} tabIndex={0}>
+    <h1 className={cnTitle({}, [props.className])} >{props.text}</h1>
+  </div>
 );

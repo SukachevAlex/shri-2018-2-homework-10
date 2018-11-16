@@ -20,12 +20,12 @@ const NavItems = navLinks.map((item, index) => {
 });
 
 export const Footer: React.SFC<IFooterProps> = (props) => (
-  <div className={cnFooter({},[props.className])}>
+  <footer className={cnFooter({},[props.className])}>
     <div className={cnFooterArea()}>
       <Nav className={cnFooterArea('Nav')}>
         {NavItems}
       </Nav>
       <Copyright />
     </div>
-  </div>
+  </footer>
 );

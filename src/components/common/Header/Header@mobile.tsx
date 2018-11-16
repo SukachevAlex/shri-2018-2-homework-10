@@ -13,10 +13,10 @@ export interface IHeaderProps {
 }
 
 export const Header: React.SFC<IHeaderProps> = (props) => (
-  <div className={cnHeader({},[props.className])}>
+  <header className={cnHeader({},[props.className])}>
     <div className={cnHeaderArea()}>
       <Logo className={cnHeaderArea('Logo')} ariaLabel="Логотип Яндекс Дом"/>
       <Burger />
     </div>
-  </div>
+  </header>
 );

@@ -29,10 +29,10 @@ const events = Data.events.map((elem) => (
 ));
 
 export const Main: React.SFC<IMainProps> = (props) => (
-  <div className={cnMain({},[props.className])}>
+  <main className={cnMain({},[props.className])}>
     <Title text="Лента событий" className={cnMain('Title')}/>
     <div className={cnEventList()}>
       {events}
     </div>
-  </div>
+  </main>
 );

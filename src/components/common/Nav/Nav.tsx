@@ -10,7 +10,7 @@ export interface INavProps {
 }
 
 export const Nav: React.SFC<INavProps> = (props) => (
-  <div className={cnNav({},[props.className])}>
+  <nav className={cnNav({},[props.className])}>
     {props.children}
-  </div>
+  </nav>
 );
