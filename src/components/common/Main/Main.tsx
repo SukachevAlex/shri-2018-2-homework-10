@@ -31,7 +31,7 @@ const events = Data.events.map((elem) => (
 export const Main: React.SFC<IMainProps> = (props) => (
   <main className={cnMain({},[props.className])}>
     <Title text="Лента событий" className={cnMain('Title')}/>
-    <div className={cnEventList()}>
+    <div className={cnEventList()} role="list">
       {events}
     </div>
   </main>

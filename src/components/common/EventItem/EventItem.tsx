@@ -17,25 +17,30 @@ export interface IEventItemProps extends IEventItem {
   critical?: boolean;
 }
 
-export const EventItem: React.SFC<IEventItemProps> = ({critical, size, icon, title, source, time, description, data}) => (
-  <div className={cnEventItem({critical, size})}>
-    <div className={cnEventItem('TopLine')}>
-      <div className={cnEventItem('Info')}>
-        <div className={cnEventItem('Header')}>
-          <Icon icon={icon} />
-          <Title title={title} />
-        </div>
-        <div className={cnEventItem('Main')}>
-          <Source source={source} />
-          <Time time={time} />
+export const EventItem: React.SFC<IEventItemProps> = ({critical, size, icon, title, source, time, description, data}) => {
+  
+  const role = critical ? 'alert' : 'listitem'
+  
+  return (
+    <div className={cnEventItem({critical, size})} role={role} tabIndex={0}>
+      <div className={cnEventItem('TopLine')}>
+        <div className={cnEventItem('Info')}>
+          <div className={cnEventItem('Header')}>
+            <Icon icon={icon} />
+            <Title title={title} />
+          </div>
+          <div className={cnEventItem('Main')}>
+            <Source source={source} />
+            <Time time={time} />
+          </div>
         </div>
       </div>
+      {!!description && <div className={cnEventItem('BottomLine')}>
+        <div className={cnEventItem('Footer')}>
+          <EventItemDescription description={description} size={size === 'l' ? 'big' : ''}/>
+        </div>
+        {!!data && <Data data={data} icon={icon}/>}
+      </div>}
     </div>
-    {!!description && <div className={cnEventItem('BottomLine')}>
-      <div className={cnEventItem('Footer')}>
-        <EventItemDescription description={description} size={size === 'l' ? 'big' : ''}/>
-      </div>
-      {!!data && <Data data={data} icon={icon}/>}
-    </div>}
-  </div>
-);
+  );
+}

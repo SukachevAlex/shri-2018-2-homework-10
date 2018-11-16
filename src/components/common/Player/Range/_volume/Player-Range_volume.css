@@ -5,10 +5,6 @@
 	appearance: none;
 }
 
-.Player-Range_volume:focus {
-	outline: none;
-}
-
 .Player-Range_volume::-webkit-slider-runnable-track {
 	height: 4px;
 	background-color: rgba(216, 216, 216, 0.3);

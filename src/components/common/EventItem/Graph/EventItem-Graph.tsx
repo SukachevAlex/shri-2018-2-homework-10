@@ -11,5 +11,5 @@ export interface IEventItemGraphProps {
 }
 
 export const Graph: React.SFC<IEventItemGraphProps> = () => (
-  <img className={cnEventItem('Graph')} src={chart} alt="Chart" />
+  <img className={cnEventItem('Graph')} src={chart} alt="График расходов" />
 );

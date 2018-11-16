@@ -12,8 +12,9 @@ export interface INavLinkProps extends IClassNameProps {
   target?: '_self' | '_blank';
   text?: string;
   url?: string;
+  ariaLabel?: string;
 }
 
-export const Link: React.SFC<INavLinkProps> = ({active, size, target, text, url}) => (
-<a className={cnNav('Link', {active, size})} href={url} target={target}>{text}</a>
+export const Link: React.SFC<INavLinkProps> = ({active, size, target, text, url, ariaLabel}) => (
+<a className={cnNav('Link', {active, size})} href={url} aria-label={ariaLabel} target={target}>{text}</a>
 );

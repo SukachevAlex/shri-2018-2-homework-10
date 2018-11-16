@@ -12,7 +12,7 @@ export interface IPlayerTrackProps {
 }
 
 export const PlayerTrack: React.SFC<IPlayerTrackProps> = ({artistName, trackName}) => (
-  <a className={cnPlayer('Track')} href="#">
+  <a className={cnPlayer('Track')} href="#" tabIndex={-1}>
     <span className={cnPlayer('ArtistName')}>{artistName}</span>
     &#32;-&#32; 
     <span className={cnPlayer('TrackName')}>{trackName}</span>

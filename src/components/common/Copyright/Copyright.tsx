@@ -11,7 +11,7 @@ export interface ICopyrightProps {
 }
 
 export const Copyright: React.SFC<ICopyrightProps> = () => (
-  <div className={cnCopyright()}>
+  <div className={cnCopyright()} tabIndex={0}>
     <Text />
   </div>
 );

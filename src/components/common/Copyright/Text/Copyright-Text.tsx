@@ -12,7 +12,7 @@ export interface ICopyrightTextProps {
 
 export const Text: React.SFC<ICopyrightTextProps> = () => (
   <p className={cnCopyright('Text')}>&copy; 2001–2017 ООО &laquo;
-    <Link url="https://yandex.ru/" target="_blank" text="Яндекс"/>
+    <Link url="https://yandex.ru/" target="_blank" ariaLabel="Ссылка на главную страницу" text="Яндекс"/>
     &raquo;
   </p>
 );
