@@ -1,0 +1,15 @@
+.EventItem_size_m {
+  grid-column: auto / span 3;
+}
+
+@media screen and (max-width: 920px) {
+	.EventItem_size_m {
+		grid-column: auto / span 6;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.EventItem_size_m {
+		grid-column: auto / span 6;
+	}
+}

@@ -1,0 +1,14 @@
+.EventItem-Description_size_big {
+  font-size: 1.5rem;
+	line-height: 1.75rem;
+	font-weight: normal;
+	color: #333333;
+	text-align: left; 
+}
+
+@media screen and (max-width: 1370px) {
+	.EventItem-Description_size_big {
+			line-height: calc(22px + (28 - 22) * ((100vw - 375px) / (1370 - 375)));
+			font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1370 - 375)));
+	}
+}

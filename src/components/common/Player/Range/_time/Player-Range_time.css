@@ -1,0 +1,33 @@
+.Player-Range_time {
+  appearance: none;
+}
+
+.Player-Range_time::-webkit-slider-runnable-track {
+	background-color: #979797;
+	height: 1px;
+}
+
+.Player-Range_time::-moz-range-track {
+	background-color: #979797;
+	height: 1px;
+}
+
+.Player-Range_time::-webkit-slider-thumb {
+	appearance: none;
+	width: 12px;
+	height: 20px;
+	cursor: pointer;
+	background: #D8D8D8;
+	border-radius: 4.5px;
+	margin-top: -10px;
+}
+
+.Player-Range_time::-moz-range-thumb {
+	appearance: none;
+	width: 12px;
+	height: 20px;
+	cursor: pointer;
+	background: #D8D8D8;
+	border-radius: 4.5px;
+	margin-top: -10px;
+}

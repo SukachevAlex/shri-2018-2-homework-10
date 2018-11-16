@@ -1,0 +1,11 @@
+.Nav-Link_size_big {
+  font-size: 1rem;
+  margin-left: 25px;
+  font-weight: 700;
+  color: #333333;
+  opacity: 0.6;
+}
+
+.Nav-Link_size_big:first-of-type {
+  margin-left: 0;
+}

@@ -1,0 +1,16 @@
+.Burger {
+  width: 16px;
+	height: 16px;
+	display: none;
+	background-image: url("./Burger.svg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+	.Burger {
+		display: block;
+	}
+}

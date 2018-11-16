@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bem-react/classname": "^1.1.1",
+    "@bem-react/core": "^1.2.0",
+    "@bem-react/di": "^1.0.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts-ts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build && mv build/ dist",
+    "eject": "react-scripts-ts eject",
+    "tslint": "tslint ./src/**/*.tsx",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.5",
+    "@types/react": "^16.7.6",
+    "@types/react-dom": "^16.0.9",
+    "bem-react-core": "^2.2.3",
+    "bem-tools-core": "0.0.3",
+    "bem-tools-create": "^2.3.0",
+    "device-detector": "^1.0.2",
+    "install": "^0.12.2",
+    "npm": "^6.4.1",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  },
+  "homepage": "."
+}

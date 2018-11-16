@@ -1,0 +1,14 @@
+.EventItem-Icon {
+  width: 52px;
+	height: 52px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+@media screen and (max-width: 570px) {
+	.EventItem-Icon {
+		width: 35px;
+		height: 35px;
+	}
+}

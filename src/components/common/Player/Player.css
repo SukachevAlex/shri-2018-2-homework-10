@@ -1,0 +1,66 @@
+.Player-TopLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+}
+
+.Player-BottomLine {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Player-Info {
+    width: 100%;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.Player-Track {
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.4375rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1370px) {
+    .Player-Track {
+        line-height: calc(21px + (23 - 21) * ((100vw - 375px) / (1370 - 375)));
+        font-size: calc(18px + (20 - 18) * ((100vw - 375px) / (1370 - 375)));
+    }
+}
+
+.Player-RangeArea {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    min-height: 35px;
+    margin-top: 5px;
+}
+
+.Player-Time {
+	font-family: Helvetica;
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.0625rem;
+	color: #A1A1A1;
+	opacity: 0.84;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.Player-Volume {
+    font-family: Helvetica;
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.0625rem;
+	color: #A1A1A1;
+	opacity: 0.84;
+	text-align: left;
+	margin-left: 15px;
+}

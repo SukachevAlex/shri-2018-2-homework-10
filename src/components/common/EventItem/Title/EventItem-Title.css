@@ -1,0 +1,19 @@
+.EventItem-Title {
+  font-size: 1.5rem;
+	line-height: 1.75rem;
+	color: inherit;
+	text-align: left;
+	margin-left: 17px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	max-height: 3.5rem;
+}
+
+@media screen and (max-width: 1370px) {
+	.EventItem-Title {
+			line-height: calc(17px + (28 - 17) * ((100vw - 375px) / (1370 - 375)));
+			font-size: calc(14px + (24 - 14) * ((100vw - 375px) / (1370 - 375)));
+	}
+}

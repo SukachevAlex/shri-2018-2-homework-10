@@ -1,0 +1,17 @@
+.EventItem-Description {
+  margin-top: 15px;
+	font-size: 1.25rem;
+	font-weight: normal;
+	line-height: 1.4375rem;
+	letter-spacing: 0.25px;
+	color: #000000;
+	text-align: left;
+	transition: font-size 0.1s ease;
+}
+
+@media screen and (max-width: 1370px) {
+  .EventItem-Description {
+    line-height: calc(22px + (28 - 22) * ((100vw - 375px) / (1370 - 375)));
+    font-size: calc(18px + (25 - 18) * ((100vw - 375px) / (1370 - 375)));
+  }
+}

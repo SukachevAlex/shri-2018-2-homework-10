@@ -1,0 +1,31 @@
+.Page-Main {
+	margin: 34px 171px 79px;
+	height: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+	.Page-Main {
+    margin-left: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
+    margin-right: calc(20px + (171 - 20) * ((100vw - 375px) / (1370 - 375)));
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.Page-Main {
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+
+	.Main-Title {
+		margin-top: 0;
+	}
+}
+
+.EventList {
+  margin-top: 32px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: minmax(171px, auto);
+	grid-auto-flow: row dense; 
+}

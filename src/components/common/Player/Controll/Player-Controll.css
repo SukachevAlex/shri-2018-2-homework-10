@@ -1,0 +1,15 @@
+.Player-Controll {
+  width: 52px;
+	height: 52px;
+	border-radius: 25px;
+	border: none;
+	margin-left: 25px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	cursor: pointer; 
+}
+
+.Player-Controll:first-of-type {
+  margin-left: 0;
+}

@@ -1,0 +1,4 @@
+.Player-Controll_next {
+    background-image: url("../controll.svg");
+    transform: rotate(180deg);
+}

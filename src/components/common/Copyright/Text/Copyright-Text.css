@@ -1,0 +1,15 @@
+.Copyright-Text {
+	font-size: 0.75rem;
+	line-height: 0.875rem;
+	color: #858585;
+	font-weight: normal;
+	letter-spacing: 0.01px;
+	text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+	.Copyright-Text {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+}
