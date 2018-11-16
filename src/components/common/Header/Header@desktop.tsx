@@ -22,7 +22,7 @@ const NavItems = navLinks.map((item, index) => {
 export const Header: React.SFC<IHeaderProps> = (props) => (
   <div className={cnHeader({},[props.className])}>
     <div className={cnHeaderArea()}>
-      <Logo className={cnHeaderArea('Logo')}/>
+      <Logo className={cnHeaderArea('Logo')} ariaLabel="Логотип Яндекс Дом" />
       <Nav className={cnHeaderArea('Nav')}>
         {NavItems}
       </Nav>

@@ -9,10 +9,11 @@ const cnLogo = cn('Logo');
 
 export interface ILogoProps {
   className?: string;
+  ariaLabel?: string;
 }
 
 export const Logo: React.SFC<ILogoProps> = (props) => (
   <div className={cnLogo({}, [props.className])}>
-    <Link url="#" target="_self" />
+    <Link url="#" target="_self" ariaLabel={props.ariaLabel} />
   </div>
 );

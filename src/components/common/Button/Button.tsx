@@ -14,6 +14,6 @@ export interface IButtonProps {
 
 export const Button: React.SFC<IButtonProps> = ({active, text, mix}) =>  {
   return (
-    <div className={[cnButton({active}), mix].join(' ')}>{text}</div>
+    <button className={[cnButton({active}), mix].join(' ')} role="button" aria-label={text} tabIndex={0}>{text}</button>
   );
 }

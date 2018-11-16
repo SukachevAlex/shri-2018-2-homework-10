@@ -13,14 +13,21 @@ export interface IPlayerRangeProps {
   time?: boolean;
   value?: string;
   volume?: boolean;
+  ariaLabel?: string;
 }
 
-export const PlayerRange: React.SFC<IPlayerRangeProps> = ({max, min, step, value, time, volume }) => (
+export const PlayerRange: React.SFC<IPlayerRangeProps> = ({max, min, step, value, time, volume }) => {
+
+  const ariaLabel = `Слайдер ${volume ? ' громкости' : time ? 'времени' : ''}`;
+
+  return (
     <input  
-      className={cnPlayer('Range', {volume, time})} 
-      type="range" 
-      max={max} 
-      min={min} 
-      step={step} 
-      defaultValue={value} />
-);
+    className={cnPlayer('Range', {volume, time})} 
+    type="range" 
+    max={max} 
+    min={min} 
+    step={step} 
+    defaultValue={value} 
+    aria-label={ariaLabel}/>
+  );
+}
